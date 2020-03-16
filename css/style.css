@@ -43,7 +43,8 @@ h5{
   left: 50%;
   width: 30%;
   margin: 0 -16%;
-  bottom:-10%
+  bottom:-10%;
+  z-index: 0;
 
 }
 
@@ -85,7 +86,10 @@ h5{
   margin:0;
   margin-top:-3em;
 }
+
 .home-menu{
+  position: relative;
+  z-index: 1;
   right: 0;
   padding:0;
 
