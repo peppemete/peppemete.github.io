@@ -2,6 +2,10 @@
 *{
   box-sizing: border-box;
 }
+
+body{
+  margin:0;
+}
 html{
   font-size: 1.25em;
   font-family: 'Montserrat', sans-serif;
@@ -37,7 +41,6 @@ h5{
 
   position: absolute;
 
-  bottom:-10px;
   width: 100%;
 }
 
