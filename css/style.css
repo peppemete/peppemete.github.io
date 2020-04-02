@@ -3,105 +3,160 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   margin:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
-html{
+
+html {
   font-size: 1.25em;
   font-family: 'Montserrat', sans-serif;
 }
-h1{
+
+h1 {
   font-size: 2.5em;
   font-style: italic;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 3em;
 }
-h2{
+
+h2 {
   font-size: 2em;
   font-weight:500;
   line-height: 2.5em;
   text-transform: uppercase;
 }
-h3{
+
+h3 {
   font-size: 1.5em;
   font-weight: 500;
   line-height: 2em;
   text-transform: uppercase;
 }
-h5{
+
+h5 {
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
 }
-.box-photo{
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
 
+/*++++++++++++
+++BACKGROUND++
++++++++++++++*/
+
+.on_blue {
+  color:#C8C8C8;
+}
+
+.on_white {
+  color:#707070;
+}
+
+.home-left {
   position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  min-height: 100vh;
+  padding:2em;
 
-  width: 100%;
+}
+
+.home-left-bg {
+  position: fixed;
+  background-image: linear-gradient(to right, #000000, #00035A);
+  height: 100vh;
+  width: 50%;
+  margin:0 -2em ;
+}
+
+.home-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  float: right;
+  
+  width: 50%;
+  min-height: 100vh;
+  padding:2em;
+
+}
+
+.home-right-bg {
+
+  position: fixed;
+  background-image: linear-gradient(to right,#BEBEBE,#FFFFFF  );
+  height: 100vh;
+  width: 50%;
+  margin:0 -2em ;
+  
+}
+
+/*++++++++++++
++++++LOGO+++++
++++++++++++++*/
+
+.logo {
+  position: fixed;
+}
+
+.logo-home{
+  text-decoration: none;
+  color:#C8C8C8
+}
+
+
+.logo-home h1 {
+  margin:0;
+}
+
+.logo-home h5 {
+  margin:0;
+  margin-top:-3em;
+}
+
+/*++++++++++++
++++++HOME+++++
++++++++++++++*/
+
+/*+++PHOTO+++*/
+
+.box-photo{
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  bottom:0;
+  
+
 }
 
 .home-photo {
   height: 100%;
   margin: 0 auto;
-  margin-bottom: -10em;
-
+  position: relative;
+  bottom: -5em;
   align-self: flex-end;
-
 }
 
-.on_blue{
-  color:#C8C8C8;
-}
-.on_white{
-  color:#707070;
-}
-
-.home-left{
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-
-  width: 50%;
-  min-height: 100vh;
-  padding-left:5%;
-
-  background-image: linear-gradient(to right, #000000, #00035A);
-}
-.home-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  float: right;
-
-  width: 50%;
-  min-height: 100vh;
-  padding-right:5%;
-
-  background-image: linear-gradient(to right,#BEBEBE,#FFFFFF  );
-}
-
-.logo {
-margin-top:-1em;
-}
-
-.logo h1{
-  margin:0;
-}
-.logo h5{
-  margin:0;
-  margin-top:-3em;
-}
+/*+++MENU++++*/
 
 .home-menu{
   position: relative;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   padding:0;
 
@@ -118,7 +173,7 @@ margin-top:-1em;
   padding: 0;
 }
 
-a .on_white:hover{
+.home-menu a .on_white:hover{
   color:#00035A;
 }
 
@@ -136,7 +191,75 @@ a .on_white:hover{
   margin-bottom:0;
 }
 
+/*++++++++++++
++++PROJECTS+++
++++++++++++++*/
 
+.menu{
+  position: fixed;
+  top:40px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #C8C8C8;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.title_page{
+  margin:0;
+}
+
+.project-container {
+  position: absolute;
+  left:0;
+  top:7.5em;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.project-item {
+  height: 11.5em;
+  margin-left: 2em;
+  margin-bottom: 5em;
+  max-width:35em ;
+}
+
+
+
+.project-description h2{
+  display: inline-block;
+  line-height: 1.25em;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.tag {
+  margin-top: 0.5em;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.tag a{
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 0.5em;
+  padding:0.125em;
+  background-color: #000000;
+  color: #C8C8C8;
+}
+
+.project-photos {
+  margin-right: 2em;
+  left:auto;
+  right: 0;
+}
 
 
 
