@@ -261,6 +261,28 @@ h5 {
   right: 0;
 }
 
+.project-photos img {
+  height: 11.5em;
+  width: auto;
+}
+
+
+
+
+/*++++++++++++
+++++1079++++
++++++++++++++*/
+@media(max-width: 1280px){
+
+  html{
+  font-size: 1em;
+  }
+
+
+
+
+
+}
 
 
 
