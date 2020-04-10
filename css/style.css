@@ -29,6 +29,7 @@ h2 {
   font-weight:500;
   line-height: 2.5em;
   text-transform: uppercase;
+  margin:0;
 }
 
 h3 {
@@ -42,6 +43,18 @@ h5 {
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.on_blue a{
+  color: #BEBEBE;
+}
+
+.on_white a{
+  color: #707070;
 }
 
 /*++++++++++++
@@ -71,10 +84,12 @@ h5 {
 
 .home-left-bg {
   position: fixed;
+  top: 0;
   background-image: linear-gradient(to right, #000000, #00035A);
   height: 100vh;
   width: 50%;
   margin:0 -2em ;
+  z-index: -1;
 }
 
 .home-right {
@@ -96,10 +111,12 @@ h5 {
 .home-right-bg {
 
   position: fixed;
+  top: 0;
   background-image: linear-gradient(to right,#BEBEBE,#FFFFFF  );
   height: 100vh;
   width: 50%;
   margin:0 -2em ;
+  z-index: -1;
   
 }
 
@@ -266,11 +283,93 @@ h5 {
   width: auto;
 }
 
+.goback {
+  position: fixed;
+  top:8em;
+}
+
+.goback {
+  margin: 0;
+}
+
+.goback a {
+  text-decoration: none;
+  color:#BEBEBE;
+}
+/*++++++++++++++
++single project+
++++++++++++++++*/
+
+.single-main{
+  margin-top: 3.5em;
+  margin-bottom: auto;
+  align-self: flex-end;
+  width: 30em;
+}
+
+.single-main-right {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.header {
+  height: 20em;
+}
+
+.header img {
+  width: 30em;
+}
+
+
+
+.main-new-features {
+  height: 22.5em;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.main-new-features>* {
+  margin:auto 0;
+}
+.main-new-features h2 {
+  margin: 0;
+}
+
+.main-new-features ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.main-new-features img {
+  width: 40em;
+  margin-left: -10em;
+}
+
+.section {
+  height:25em ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.section img{
+  height: 25em;
+}
+
+.section h2 {
+  text-transform: capitalize;
+  line-height: 1em;
+  text-align: center;
+}
+
 
 
 
 /*++++++++++++
-++++1079++++
++++++1280+++++
 +++++++++++++*/
 @media(max-width: 1280px){
 
