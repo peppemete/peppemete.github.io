@@ -432,8 +432,9 @@ a {
     width: 130%;
     height: auto;
     top:2em;
-    left:-50%;
+    left:-65%;
     z-index: 1;
+    position: fixed;
   }
 
 
