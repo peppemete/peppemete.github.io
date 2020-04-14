@@ -460,7 +460,7 @@ a {
   }
 
   .logo-home.home h1 {
-    position: absolute;
+    position: fixed;
     right: 0;
     top:2em;
     right: 1rem;
@@ -468,7 +468,7 @@ a {
   }
 
   .logo-home.home h5 {
-    position:absolute;
+    position:fixed;
     right: 1rem;
     display: flex;
     flex-direction: column;
