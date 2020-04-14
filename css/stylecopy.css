@@ -48,8 +48,18 @@ h5 {
 }
 
 a {
+  color: #707070;
   text-decoration: none;
 }
+
+a:hover {
+  color: #00035A;
+}
+.logo a:hover {
+  color: #BEBEBE;
+}
+
+
 
 .text_center {
   text-align: center;
@@ -123,6 +133,7 @@ a {
 
 .aside-left {
   position: fixed;
+  left: 0;
   width: 5em;
   height: 90vh;
   display: flex;
@@ -399,6 +410,39 @@ a {
   background-color: #FFFFFF;
   border-radius: 50%;
 }
+
+/*++++++++++++++
++about me+
++++++++++++++++*/
+
+.photo-left {
+  width: 50%;
+  left: 0;
+}
+
+.about-left {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  color:#707070;
+  padding:2em;
+  padding-right: 10em;
+
+}
+
+.about-left h2 {
+  margin-bottom: 25%;
+}
+
+.about-left blockquote {
+  font-weight: bold;
+  margin: 3em 2em;
+}
+
+.about-left h3 {
+  margin-top: 1em;
+}
+
 
 
 
