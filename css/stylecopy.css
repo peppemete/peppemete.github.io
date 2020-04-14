@@ -431,10 +431,12 @@ a {
   .home-photo {
     width: 130%;
     height: auto;
-    bottom:0;
+    top:2em;
     left:-50%;
     z-index: 1;
   }
+
+
 
   .home-menu {
     display: none;
@@ -443,30 +445,36 @@ a {
   .aside-left.home {
     display: flex;
     height: 50vh;
+    width: 100vw;
     align-items: flex-start;
   }
 
   .logo-home.home {
     z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+  
   }
 
   .logo-home.home h1 {
     position: absolute;
+    right: 0;
     top:2em;
-    width: 90vw;
-
+    right: 1rem;
+    
   }
 
   .logo-home.home h5 {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end;
-   width: 100vw;
-   height: 100vh;
-   margin:-2em;
-   justify-content: center;
-   font-size: 1.5em;
-   
+    position:absolute;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    margin:0;
+    font-size: 1.5em;
   }
   
 
@@ -474,7 +482,9 @@ a {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to bottom,#BEBEBE,#FFFFFF  );
+    left: 0;
   }
+
   .home-left-bg {
     display: none;
   }
@@ -488,6 +498,11 @@ a {
     background-image: linear-gradient(to top, #000000, #00035A);
     
 
+  }
+  .home-left {
+    width: 100%;
+    padding:1em;
+    display: flex;
   }
  
   .logo-home h1{
