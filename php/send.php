@@ -1,22 +1,22 @@
 <?php
 $myEmail = 'mete46@hotmail.it';
 $userEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$userMessage = '
+$userMessage = "
   <html>
     <head>
       <title>Grazie per averci contattato</title>
     </head>
     <body>
-        <p>Hi '$_POST['name']',</p>
+        <p>Hi {$_POST['name']},</p>
         <p>thanks for contacting me.</p>
         <p>Your message is:</p>
-        <p>'$_POST['subject']'</p>
-        <p>'$_POST['message']'</p>
+        <p>{$_POST['subject']}</p>
+        <p>{$_POST['message']}</p>
         <p>I will try to answer as soon as possible <p>
       <p>Giuseppe Mete</p>
     </body>
   </html>
-';
+";
 $adminMessage = "
   <html>
     <head>
@@ -37,3 +37,4 @@ $headers[] = 'Content-type: text/html; charset=utf-8';
 mail($userEmail, 'Richiesta di contatto effettuata con successo', $userMessage, implode("\r\n", $headers));
 mail($adminEmail, 'Richiesta di contatto dal sito web', $adminMessage, implode("\r\n", $headers));
 echo "Mail sended successfully";
+?> 
