@@ -695,9 +695,18 @@ a:hover {
 
   .photo-left {
     display: none;
+
   }
 
+
+
   .contact-left {
+    padding:1em;
+    margin-top:4em;
+    left: 0;
+    width: 100%;
+  }
+  .about-left {
     padding:1em;
     margin-top:4em;
     left: 0;
