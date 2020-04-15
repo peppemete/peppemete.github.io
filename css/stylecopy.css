@@ -547,6 +547,10 @@ a:hover {
     text-align: center;
   }
 
+  h2 {
+    line-height: 1em;
+  }
+
  
 
   .home-photo {
@@ -569,6 +573,11 @@ a:hover {
     height: 50vh;
     width: 100vw;
     align-items: flex-start;
+    padding:1em;
+  }
+
+  .logo {
+    left: 0;
   }
 
   .logo-home.home {
@@ -612,15 +621,17 @@ a:hover {
   }
 
   .aside-left {
-    height: 5em;
+    height: 3.5em;
     width: 100%;
-    padding:2em;
+    padding:1em;
     margin:0;
     flex-direction: row-reverse;
     background-image: linear-gradient(to top, #000000, #00035A);
     
 
   }
+
+ 
   .home-left {
     width: 100%;
     padding:1em;
@@ -644,8 +655,23 @@ a:hover {
     display: none;
   }
 
+  .project-section>* {
+    width: 100vw;
+    padding: 0 1em;
+  }
+
+  .project-list-photo img{
+    max-width: 100%;
+    margin: 1em auto;
+  }
+
   .tag {
     justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .tag>* {
+    margin-top: 1em;
   }
 
   .new-features >*{
@@ -663,6 +689,50 @@ a:hover {
     order: 1;
   }
 
+  .img-iphone img {
+    width: 100%;
+  }
+
+  .photo-left {
+    display: none;
+  }
+
+  .contact-left {
+    padding:1em;
+    margin-top:4em;
+    left: 0;
+    width: 100%;
+  }
+
+  .contact-social {
+    margin-bottom: 3em ;
+  }
+  .contact-social li {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .contact-social p {
+    
+    text-align: left;
+  
+  }
+
+  .mail-form div p {
+    
+    margin: 0.5em;
+    
+  }
+
+  .mail-form>div {
+    flex-basis: 100%;
+  }
+
+  .mail-form *:last-child {
+    margin: auto;
+  }
+
+  
 }
 
 
