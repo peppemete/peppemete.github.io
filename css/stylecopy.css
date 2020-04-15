@@ -449,6 +449,83 @@ a:hover {
 
 
 /*++++++++++++
+++++contact++++
++++++++++++++*/
+
+.contact-left {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  color:#707070;
+  padding:2em;
+  padding-right: 10em;
+
+}
+
+.contact-social {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.contact-social li a {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  height: 2em;
+}
+
+.contact-social p {
+  display: inline-block;
+  margin: 1em;
+}
+
+.mail-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.mail-form div {
+  flex-basis: 45%;
+  margin-bottom:1em;
+}
+
+.mail-form input {
+  width: 100%;
+  height: 2em;
+}
+
+.mail-form div:nth-child(3), .mail-form div:nth-child(4){
+  flex-basis: 100%;
+}
+
+.mail-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+.mail-form input {
+  flex-basis: 25%;
+  height: 2em;
+}
+
+.mail-form div p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.mail-form input[type=submit] {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  color:#707070;
+}
+
+
+
+
+
+/*++++++++++++
 +++++1280+++++
 +++++++++++++*/
 @media(max-width: 1280px){
