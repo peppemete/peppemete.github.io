@@ -459,12 +459,18 @@ a:hover {
   color:#707070;
   padding:2em;
   padding-right: 10em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: 90vh;
 
 }
 
 .contact-social {
   list-style: none;
   padding-left: 0;
+  margin-bottom: auto;
+ 
 }
 
 
