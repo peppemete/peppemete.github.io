@@ -709,7 +709,7 @@ ol li {
 
  .box-photo{
   
-   
+   z-index: 1;
  }
 
   .home-photo {
