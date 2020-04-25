@@ -2,9 +2,10 @@
 $myEmail = 'mete46@hotmail.it';
 $userEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 $userMessage = "
+<!DOCTYPE html>
   <html>
     <head>
-      <title>Grazie per averci contattato</title>
+      <title>Thanks for contacting me.</title>
     </head>
     <body>
         <p>Hi {$_POST['name']},</p>
@@ -18,6 +19,7 @@ $userMessage = "
   </html>
 ";
 $adminMessage = "
+<!DOCTYPE html>
   <html>
     <head>
       <title>Messagio dal portfolio</title>
@@ -32,9 +34,25 @@ $adminMessage = "
     </body>
   </html>
 ";
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=utf-8';
-mail($userEmail, 'Richiesta di contatto effettuata con successo', $userMessage, implode("\r\n", $headers));
-mail($adminEmail, 'Richiesta di contatto dal sito web', $adminMessage, implode("\r\n", $headers));
-echo "Mail sended successfully";
-?> 
+$mail_header  = NULL;
+    $mail_header .= "MIME-Version: 1.0<br>\n";
+    $mail_header .= "Content-type: text/html; charset=iso-8859-1<br>\n";
+    $mail_header .= 'From: "GIEMME graphics" <mete46@hotmail.it>'. "\n";
+    $mail_header .= 'Reply-To: "GIEMME graphics" <mete46@hotmail.it>' . "\n";
+    $mail_header .= 'Return-Path: "GIEMME graphics" <mete46@hotmail.it>';
+    $mail_header .= "\n";
+
+
+mail($myEmail, "Mail from portfolio", $adminMessage, $mail_header,"-f '" . "mete46@hotmail.it" . "'");
+if ( mail($userEmail, "Thanks for contacting me.", $userMessage,  $mail_header,"-f '" . "mete46@hotmail.it" . "'") ) {
+    echo "Message sended successfully";
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    exit();
+} else {
+    echo "ERROR Message not sended";
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    exit();
+    
+}
+
+?>
