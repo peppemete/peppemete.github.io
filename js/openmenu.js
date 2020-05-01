@@ -25,6 +25,7 @@ aside.innerHTML = `
                             `;
 var menuBtn=document.getElementById("menuBtn");
 var bars=menuBtn.querySelectorAll("div");
+var body=document.body; 
 var menuWindow=document.getElementById("menuWindow");
 var menuBg=document.getElementById("menuBg");
 menuBtn.addEventListener("click",openMenu)
@@ -34,5 +35,5 @@ function openMenu() {
     menuBg.classList.toggle("menubg-visible");
     bars.forEach(bar => bar.classList.toggle("change"))
     aside.classList.toggle("open");
-
+    body.classList.toggle("block-scroll");
 }
