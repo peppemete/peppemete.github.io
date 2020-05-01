@@ -7,7 +7,7 @@ aside.innerHTML = `
             <div class="bar3"></div>
             </div>
             <div class="logo">
-                <a href="index.html" class="logo-home">
+                <a href="/index.html" class="logo-home">
                     <h1>giemme</h1>
                     <h5>coder & designer</h5>
                     </a>
@@ -16,9 +16,9 @@ aside.innerHTML = `
                     <div id="menuWindow" class="menu-window">
                         <ul>
                             <li><h2><a href="index.html">Home</a></h2></li>
-                            <li><h2><a href="projects.html">Project</a></h2></li>
-                            <li><h2><a href="about.html">About</a></h2></li>
-                            <li><h2><a href="contact.html">Contact</a></h2></li>
+                            <li><h2><a href="/projects/projects.html">Project</a></h2></li>
+                            <li><h2><a href="/about/about.html">About</a></h2></li>
+                            <li><h2><a href="/contact/contact.html">Contact</a></h2></li>
                             </ul>
                             </div>
                             <div id="menuBg" class="menubg"></div>
