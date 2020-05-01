@@ -8,8 +8,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  min-height: 100vh;
+  background: linear-gradient(to right, #000000 0%, #00035A 50%, #BEBEBE 50%, #FFFFFF 100%);
 }
+
 
 html {
   font-size: 1.25em;
