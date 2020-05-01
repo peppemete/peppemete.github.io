@@ -1,0 +1,17 @@
+<svg id="computer" xmlns="http://www.w3.org/2000/svg" width="80" height="77.333" viewBox="0 0 80 77.333">
+  <g id="Group_86" data-name="Group 86" transform="translate(0 50.667)">
+    <g id="Group_85" data-name="Group 85">
+      <path id="Path_39" data-name="Path 39" d="M73.333,332.8H0v5.332a5.341,5.341,0,0,0,5.335,5.335h26.6c-.316,5.288-2.517,8-6.6,8H22.667a4,4,0,0,0,0,8H57.333a4,4,0,0,0,0-8H54.667c-4.085,0-6.285-2.712-6.6-8h26.6A5.341,5.341,0,0,0,80,338.132V332.8ZM36,335.467h8a1.333,1.333,0,1,1,0,2.667H36a1.333,1.333,0,1,1,0-2.667Zm12.172,16H31.827c1.643-1.819,2.609-4.527,2.8-8h10.74C45.564,346.94,46.529,349.648,48.172,351.467Z" transform="translate(0 -332.8)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_88" data-name="Group 88" transform="translate(8 8)">
+    <g id="Group_87" data-name="Group 87">
+      <path id="Path_40" data-name="Path 40" d="M51.2,59.733v40h64v-40Z" transform="translate(-51.2 -59.733)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Group_90" data-name="Group 90">
+    <g id="Group_89" data-name="Group 89">
+      <path id="Path_41" data-name="Path 41" d="M74.665,8.533H5.335A5.341,5.341,0,0,0,0,13.868V56.533H5.333V15.2a1.334,1.334,0,0,1,1.333-1.333H73.333A1.334,1.334,0,0,1,74.667,15.2V56.533H80V13.868A5.341,5.341,0,0,0,74.665,8.533Z" transform="translate(0 -8.533)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
