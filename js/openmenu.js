@@ -28,12 +28,12 @@ var bars=menuBtn.querySelectorAll("div");
 var body=document.body; 
 var menuWindow=document.getElementById("menuWindow");
 var menuBg=document.getElementById("menuBg");
-menuBtn.addEventListener("click",openMenu)
+menuBtn.addEventListener("click",openMenu);
 function openMenu() {
     console.log("you clicked");
     menuWindow.classList.toggle("menu-window-open");
     menuBg.classList.toggle("menubg-visible");
-    bars.forEach(bar => bar.classList.toggle("change"))
+    bars.forEach(bar => bar.classList.toggle("change"));
     aside.classList.toggle("open");
     body.classList.toggle("block-scroll");
 }
