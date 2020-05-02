@@ -700,7 +700,7 @@ ol li {
   height: 2em;
 }
 
-.mail-form div:nth-child(3), .mail-form div:nth-child(4){
+.mail-form div:nth-child(4), .mail-form div:nth-child(5){
   grid-column:1/-1;
 }
 
@@ -710,7 +710,6 @@ ol li {
 }
 
 .mail-form input {
-  flex-basis: 25%;
   height: 2em;
 }
 
