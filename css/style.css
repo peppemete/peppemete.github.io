@@ -326,9 +326,7 @@ ol li {
   margin: 5em 0;
 }
 
-.project-list>li:first-child{
-  margin: 0;
-}
+
 .project-list-photo img{
   max-width:70%;
 }
@@ -360,10 +358,9 @@ ol li {
 +single project+
 +++++++++++++++*/
 
-.main {
-  padding-top: 3em;
-}
+
 .project-section{
+  padding-top: 3em;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -372,14 +369,13 @@ ol li {
 
 }
 
+
+
 .project-section>*{
   flex-basis: 50%;
 }
 
 
-.project-section:first-child {
-  margin-top: 0;
-}
 
 
 .project-section-left {
@@ -396,7 +392,12 @@ ol li {
   
   justify-content: center;
   color:#C8C8C8;
+  
+  
 }
+
+
+
 
 .project-section-left>* {
   width: 100%;
