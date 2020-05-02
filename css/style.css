@@ -688,15 +688,12 @@ ol li {
 }
 
 .mail-form {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+ 
 }
 
-.mail-form div {
-  flex-basis: 45%;
-  margin-bottom:1em;
-}
 
 .mail-form input {
   width: 100%;
@@ -704,7 +701,7 @@ ol li {
 }
 
 .mail-form div:nth-child(3), .mail-form div:nth-child(4){
-  flex-basis: 100%;
+  grid-column:1/-1;
 }
 
 .mail-form textarea {
@@ -732,6 +729,7 @@ ol li {
 
 
 
+
 /*++++++++++++
 +++++1280+++++
 +++++++++++++*/
@@ -741,6 +739,10 @@ ol li {
   font-size: 1em;
   }
 
+}
+
+.mobile-bg {
+  display: none;
 }
 @media(max-width: 500px){
 
@@ -753,6 +755,7 @@ ol li {
     color:#707070 ;
     text-align: center;
   }
+
 
   h2 {
     line-height: 1em;
@@ -837,10 +840,12 @@ ol li {
   }
   
 
-  .home-right-bg {
+  .mobile-bg {
+    display: block;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to bottom,#BEBEBE,#FFFFFF  );
+    background-image: linear-gradient(to bottom,#BEBEBE,#FFFFFF);
     left: 0;
   }
 
@@ -965,7 +970,7 @@ ol li {
   }
   
   .contact-social p {
-    
+    margin-right:0;
     text-align: left;
   
   }
@@ -976,8 +981,8 @@ ol li {
     
   }
 
-  .mail-form>div {
-    flex-basis: 100%;
+  .mail-form>* {
+    grid-column: 1/-1;
   }
 
   .mail-form *:last-child {
