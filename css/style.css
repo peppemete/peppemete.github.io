@@ -328,11 +328,13 @@ ol li {
 
 
 .project-list-photo img{
-  max-width:70%;
+  width:70%;
+ 
 }
 
 .project-list-photo {
-  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .tag {
