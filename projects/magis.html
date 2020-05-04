@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body onload="load()">
     <div class="mobile-bg"></div>
 
 
@@ -19,23 +19,23 @@
 
         <div id="fullpage">
 
-            <div class="section">
+            <div class="section" onshow="load()">
                 <header class="project-section">
                     <section class="project-section-left">
-                    <img class="main-photo" src="/img/magis/magis-1.png" alt="">
-                </section>
-                <section class="project-section-right">
-                    <h2>Magis - Website redesign </h2>
-                    <ul class="tag">
-                        <li><a href="#">UX/UI</a></li>
-                        <li><a href="#">Desktop</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Customization tool</a></li>
-                        <li><a href="#">XD</a></li>
-                    </ul>
-                    <p>Magis is one of the most important companies in the design furniture sector.
-                        We worked on this project during hte Digital Art Direction course.
-                        The goal of this project was to redesign the current website , focusing on the customize tool.</p>
+                        <img class="main-photo" src="/img/magis/magis-1.png" alt="">
+                    </section>
+                    <section class="project-section-right">
+                        <h2>Magis - Website redesign </h2>
+                        <ul class="tag">
+                            <li><a href="#">UX/UI</a></li>
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Customization tool</a></li>
+                            <li><a href="#">XD</a></li>
+                        </ul>
+                        <p>Magis is one of the most important companies in the design furniture sector.
+                            We worked on this project during hte Digital Art Direction course.
+                            The goal of this project was to redesign the current website , focusing on the customize tool.</p>
                         <h3 class="text_center"><a href="#">Click here for the full prototype</a></h3>
                     </section>
                 </header>
@@ -119,6 +119,12 @@
                 <section class="project-section">
                     <section class="project-section-left full">
                         <h2>User Journey</h2>
+                        <div class="pdf">
+                            <object data='journey.pdf'>
+                                <p>Oops! Your browser doesn't support PDFs!</p>
+                                <p><a href="journey.pdf">Download Instead</a></p>
+                            </object>
+                        </div>
                         <div class="journey">
                             <div class="journey-section">
                                 <div class="journey-page">
@@ -307,6 +313,12 @@
     <script type="text/javascript" src="/js/fullpage.js"></script>
     <script type="text/javascript" src="/js/openmenu.js" ></script>
     <script>
+        
+       function load(){
+           console.log("caricato");
+       }
+    </script>
+    <script>
         new fullpage('#fullpage', {
             //options here
             autoScrolling:true,
@@ -318,8 +330,9 @@
         });
         
         //methods
+        
         fullpage_api.setAllowScrolling(true);
-        </script>
+    </script>
 
 </body>
 
