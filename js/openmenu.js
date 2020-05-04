@@ -1,7 +1,7 @@
 var aside = document.getElementById("aside");
 
 aside.innerHTML = `
-        <div class="menuBtn" id="menuBtn">
+        <div class="menuBtn" id="menuBtn" onclick="fullpage_api.setAllowScrolling(false)";>
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -28,6 +28,7 @@ var bars=menuBtn.querySelectorAll("div");
 var body=document.body; 
 var menuWindow=document.getElementById("menuWindow");
 var menuBg=document.getElementById("menuBg");
+var Nclick=0;
 menuBtn.addEventListener("click",openMenu);
 function openMenu() {
     console.log("you clicked");
@@ -35,5 +36,10 @@ function openMenu() {
     menuBg.classList.toggle("menubg-visible");
     bars.forEach(bar => bar.classList.toggle("change"));
     aside.classList.toggle("open");
-    body.classList.toggle("block-scroll");
+    Nclick++;
+    if(Nclick%2==0){
+        fullpage_api.setAllowScrolling(true);
+    }else{
+        fullpage_api.setAllowScrolling(false);
+    }
 }
