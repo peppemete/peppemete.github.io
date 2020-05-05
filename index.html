@@ -9,7 +9,7 @@
 </head>
 <body class="home-page">
     <div class="mobile-bg"></div>
-    
+    <!--home-->
     <div id="aside" class="aside-left home"></div>
 
     
@@ -28,12 +28,100 @@
         <section class="home-right">
             <ul class="home-menu">
                 <li> <a href="/projects/projects.html"> projects  </a></h2> </li>
-                <li> <a href="/about/about.html">  about me </a> </h2> </li>
-                <li><a href="/contact/contact.html">  contact </a> </h2> </li>
+                <li> <a href=javascript:openAbout()>  about me </a> </h2> </li>
+                <li><a href=javascript:openContact()>  contact </a> </h2> </li>
             </ul>
         </section>
+    <!--contact-->
+    <div class="contact-left remove">
+        <h2>contact</h2>
+        <ul class="contact-social">
+            <li><a href=""><img src="/img/contact/facebook.svg" alt="facebook icon"><p>Contact me on Facebook</p></a></li>
+            <li><a href=""><img src="/img/contact/instagram.svg" alt="instagram icon"><p>Follow me on Instagram</p></a></li>
+        </ul>
+        <div class="contact-mail">
+
+            <h3>send me a mail</h3>
+            <form class="mail-form" data-netlify="true" method="post">
+                <div>
+                <p>Your name</p>
+                <input type="name" name="name" />
+            </div>
+            <div>
+                <p>Your mail address</p>
+                <input type="email" name="email" />
+            </div>
+            <div>
+                <p>Subject</p>
+                <input type="subject" name="subject" />
+            </div>
+            <div>
+                <p>Message</p>
+                <textarea name="message" rows="8"  ></textarea>
+            </div>
+            <input type="submit" value="Send" />
+        </form>
+    </div>
+    </div>
+    <!--about-->
+    <div class="about-left remove">
+        
+        <h2>about me</h2>
+        <p>Hi, I'm <strong>Giuseppe Mete</strong> .<br>
+        I am a computer engineer and a web designer with a passion for the tech world. I graduated in <strong>computer engineering</strong>  at <strong>UNICAL</strong> in the summer of 2019, and immediately after I decided to continue my study path in the graphic world, enrolling in the master’s Web and Digital design at the <strong>SPD in IULM</strong>.
+         </p>
+        
+        <blockquote>  
+             Head down and hard work are my keywords in every project I work on.
+         </blockquote>
+
+        <h3><a href="">dowload my cv</a> </h3>
+        <h3><a href="/contact/contact.html">contact me</a> </h3>
+    </div>
+
 
         <script type="text/javascript" src="js/openmenu.js" ></script>
+        <script>
+            const photo=document.querySelector("div.box-photo");
+            const logo=document.querySelector("section.home-left");
+            const home=document.querySelector("section.home-right");
+            const contact=document.querySelector("div.contact-left");
+            const about=document.querySelector("div.about-left");
+            const goback=document.querySelector("h5.goback").firstChild;
+            
+
+            function photoMove(){
+                photo.classList.toggle("photo-left");
+            }
+
+            function removeHome(){
+                photoMove();
+                aside.classList.toggle("home");
+                logo.classList.toggle("remove");
+                home.classList.toggle("remove");
+            }
+
+            function openContact(){
+                removeHome()
+                contact.classList.remove("remove");
+                goback.setAttribute("href", "javascript:turnHome(contact)");
+            }
+
+            function openAbout(){
+                removeHome()
+                about.classList.remove("remove");
+                goback.setAttribute("href", "javascript:turnHome(about)");
+            }
+
+            function turnHome(page){
+                page.classList.add("remove");
+                removeHome();
+                
+                
+            }
+
+
+        </script>
         
             
        
