@@ -15,7 +15,7 @@ aside.innerHTML = `
                     <h5 class="goback"><a  href="javascript:history.back()">go back</a> </h5>
                     <div id="menuWindow" class="menu-window">
                         <ul>
-                            <li><h2><a href="index.html">Home</a></h2></li>
+                            <li><h2><a href="/index.html">Home</a></h2></li>
                             <li><h2><a href="/projects/projects.html">Project</a></h2></li>
                             <li><h2><a href="/about/about.html">About</a></h2></li>
                             <li><h2><a href="/contact/contact.html">Contact</a></h2></li>
@@ -43,3 +43,5 @@ function openMenu() {
         fullpage_api.setAllowScrolling(false);
     }
 }
+
+
