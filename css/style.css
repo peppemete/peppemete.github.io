@@ -106,7 +106,7 @@ ol li {
   position: absolute;
   top:0;
   left:0;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   
 }
@@ -259,6 +259,8 @@ ol li {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  transform: translateX(0);
+  transition: 0.5s;
   
 
 }
@@ -396,6 +398,10 @@ div.active .project-section-left {
   color:#C8C8C8;
   transform: translateX(-100%);
   transition: .5s;
+}
+
+.remove {
+  display: none !important;
 }
 
 
@@ -633,8 +639,8 @@ div.active .project-section-right {
 +++++++++++++++*/
 
 .photo-left {
-  width: 50%;
-  left: 0;
+  transform: translateX(-20%);
+  
 }
 
 .about-left {
@@ -755,15 +761,26 @@ div.active .project-section-right {
   font-size: 1em;
   }
 
+  .photo-left {
+    transform: translateX(-25%);
+  }
+
 }
 
 .mobile-bg {
   display: none;
 }
-@media(max-width: 500px){
+@media(max-width: 700px){
 
   html{
     font-size: 1.5em;
+    }
+
+    body {
+      position: absolute;
+      top:0;
+      
+      
     }
 
 
@@ -974,13 +991,13 @@ div.active .project-section-right {
     padding:1em;
     margin-top:4em;
     left: 0;
-    width: 100%;
+    width: 100vw;
   }
   .about-left {
     padding:1em;
     margin-top:4em;
     left: 0;
-    width: 100%;
+    width: 100vw;
   }
 
   .contact-social {
