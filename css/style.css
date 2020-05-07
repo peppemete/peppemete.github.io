@@ -225,6 +225,7 @@ ol li {
   left:-1.5em;
   z-index: 4;
   transform:rotate(-90deg);
+  margin: auto 0;
 }
 
 .logo-home{
@@ -260,7 +261,7 @@ ol li {
   justify-content: center;
   overflow: hidden;
   transform: translateX(0);
-  transition: 0.5s;
+  
   
 
 }
@@ -310,10 +311,6 @@ ol li {
 
 
 
-
-.goback a {
-  color: #C8C8C8;
-}
 
 
 /*++++++++++++
@@ -642,6 +639,10 @@ div.active .project-section-right {
   transform: translateX(-20%);
   
 }
+.move {
+  transition:.5s;
+
+}
 
 .about-left {
   position: absolute;
@@ -913,9 +914,7 @@ div.active .project-section-right {
 
     color:#c8c8c8;
   }
-  .goback {
-    display: none;
-  }
+
 
   .logo {
     transform: none;
