@@ -7,7 +7,7 @@
     <meta name="description" content="Hi, I'm Giuseppe Mete, I'm a web design and a coder, and this is my portfolio.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="home-page">
+<body class="home-page" onload="show()">
     <div class="mobile-bg"></div>
     <!--home-->
     <div id="aside" class="aside-left home"></div>
@@ -28,12 +28,12 @@
         <section class="home-right">
             <ul class="home-menu">
                 <li> <a href="/projects/projects.html"> projects  </a></h2> </li>
-                <li> <a href=javascript:openAbout()>  about me </a> </h2> </li>
-                <li><a href=javascript:openContact()>  contact </a> </h2> </li>
+                <li> <a href="javascript:openAboutHome()">  about me </a> </h2> </li>
+                <li><a href="javascript:openContactHome()">  contact </a> </h2> </li>
             </ul>
         </section>
     <!--contact-->
-    <div class="contact-left remove">
+    <div id="contact" class="contact-left remove">
         <h2>contact</h2>
         <ul class="contact-social">
             <li><a href=""><img src="/img/contact/facebook.svg" alt="facebook icon"><p>Contact me on Facebook</p></a></li>
@@ -64,7 +64,7 @@
     </div>
     </div>
     <!--about-->
-    <div class="about-left remove">
+    <div id="about" class="about-left remove">
         
         <h2>about me</h2>
         <p>Hi, I'm <strong>Giuseppe Mete</strong> .<br>
@@ -76,7 +76,7 @@
          </blockquote>
 
         <h3><a href="">dowload my cv</a> </h3>
-        <h3><a href="/contact/contact.html">contact me</a> </h3>
+        <h3><a href="/index.html#contact" onclick="javascript:location.href='/index.html#contact';window.location.reload();">contact me</a> </h3>
     </div>
 
 
@@ -87,12 +87,14 @@
             const home=document.querySelector("section.home-right");
             const contact=document.querySelector("div.contact-left");
             const about=document.querySelector("div.about-left");
-            const goback=document.querySelector("h5.goback").firstChild;
+            const goHome=document.querySelector("#goHome");
+            const anch=window.location.href.substring(window.location.href.indexOf("#")+1);
             
 
             function photoMove(){
                 photo.classList.toggle("photo-left");
             }
+
 
             function removeHome(){
                 photoMove();
@@ -101,23 +103,71 @@
                 home.classList.toggle("remove");
             }
 
+            function openContactHome(){
+                removeHome()
+                photo.classList.add("move");
+                contact.classList.remove("remove");
+                location.href="/index.html#contact";                 
+            }
+
             function openContact(){
                 removeHome()
                 contact.classList.remove("remove");
-                goback.setAttribute("href", "javascript:turnHome(contact)");
+                location.href="/index.html#contact";                 
             }
+
+
 
             function openAbout(){
                 removeHome()
-                about.classList.remove("remove");
-                goback.setAttribute("href", "javascript:turnHome(about)");
+                about.classList.remove("remove");              
+                location.href="/index.html#about";
             }
 
-            function turnHome(page){
-                page.classList.add("remove");
+            function openAboutHome(){
                 removeHome();
+                photo.classList.add("move");
+                about.classList.remove("remove");              
+                location.href="/index.html#about";
+            }
+
+
+            function turnHome(){
+                var url=window.location.href;
+                var anchor=url.substring(url.indexOf("#")+1);
+                removeHome();
+                console.log(anchor);
+                if(anchor=="about"){
+                    about.classList.add("remove");
+                    
+                }else if(anchor=="contact"){
+                    contact.classList.add("remove");
+                    
+                }
+      
+            }
+
+
+            function show() {
+            var backurl=document.referrer;
+            var back=backurl.substring(backurl.indexOf("#")+1);
+            var url=window.location.href;
+            var anchor=url.substring(url.indexOf("#")+1);
+               
+            if(anchor=="about"){
                 
-                
+                    openAbout();
+                }else if(anchor=="contact"){
+                    
+                    openContact();        
+                }else {
+                    
+                    location.href="/index.html#home";
+                }
+            }
+
+            if(anch=="contact"||anch=="about"){
+                goHome.setAttribute("onClick","javascript:turnHome()");
             }
 
 
