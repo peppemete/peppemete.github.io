@@ -6,19 +6,19 @@ aside.innerHTML = `
             <div class="bar2"></div>
             <div class="bar3"></div>
             </div>
-            <div class="logo">
-                <a href="/index.html" class="logo-home">
+            <a id="goHome" href="/index.html#home" onclick="javascript:location.href='/index.html#home';window.location.reload();" class="logo">
+                <div class="logo-home">
                     <h1>giemme</h1>
                     <h5>coder & designer</h5>
-                    </a>
                     </div>
-                    <h5 class="goback"><a  href="javascript:history.back()">go back</a> </h5>
+                </a>
+                    
                     <div id="menuWindow" class="menu-window">
                         <ul>
-                            <li><h2><a href="/index.html">Home</a></h2></li>
+                            <li><h2><a href="/index.html#home" onclick="javascript:location.href='/index.html#home';window.location.reload();">Home</a></h2></li>
                             <li><h2><a href="/projects/projects.html">Project</a></h2></li>
-                            <li><h2><a href="/about/about.html">About</a></h2></li>
-                            <li><h2><a href="/contact/contact.html">Contact</a></h2></li>
+                            <li><h2><a href="/index.html#about" onclick="javascript:location.href='/index.html#about';window.location.reload();">About</a></h2></li>
+                            <li><h2><a href="/index.html#contact" onclick="javascript:location.href='/index.html#contact';window.location.reload();">Contact</a></h2></li>
                             </ul>
                             </div>
                             <div id="menuBg" class="menubg"></div>
