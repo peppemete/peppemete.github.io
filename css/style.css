@@ -919,6 +919,7 @@ div.active .project-section-right {
   .logo {
     transform: none;
     font-size: 0.7em;
+    margin-top: -2em;
   }
 
   .logo h5 {
