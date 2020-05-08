@@ -107,13 +107,15 @@
                 removeHome()
                 photo.classList.add("move");
                 contact.classList.remove("remove");
-                location.href="/index.html#contact";                 
+                location.href="/index.html#contact";  
+                goHome.setAttribute("onClick","javascript:turnHome()");              
             }
 
             function openContact(){
                 removeHome()
                 contact.classList.remove("remove");
-                location.href="/index.html#contact";                 
+                location.href="/index.html#contact";   
+                goHome.setAttribute("onClick","javascript:turnHome()");              
             }
 
 
@@ -122,6 +124,7 @@
                 removeHome()
                 about.classList.remove("remove");              
                 location.href="/index.html#about";
+                goHome.setAttribute("onClick","javascript:turnHome()");
             }
 
             function openAboutHome(){
@@ -129,6 +132,7 @@
                 photo.classList.add("move");
                 about.classList.remove("remove");              
                 location.href="/index.html#about";
+                goHome.setAttribute("onClick","javascript:turnHome()");
             }
 
 
@@ -139,9 +143,11 @@
                 console.log(anchor);
                 if(anchor=="about"){
                     about.classList.add("remove");
+                    photo.classList.add("move");
                     
                 }else if(anchor=="contact"){
                     contact.classList.add("remove");
+                    photo.classList.add("move");
                     
                 }
       
@@ -165,11 +171,6 @@
                     location.href="/index.html#home";
                 }
             }
-
-            if(anch=="contact"||anch=="about"){
-                goHome.setAttribute("onClick","javascript:turnHome()");
-            }
-
 
         </script>
         
