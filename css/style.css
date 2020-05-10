@@ -329,13 +329,15 @@ ol li {
 
 
 .project-list-photo img{
-  width:70%;
- 
+  max-width:70%;
+  max-height: 25vh;
 }
 
 .project-list-photo {
+  width:70%;
   display: flex;
   justify-content: flex-end;
+  align-content: center;
 }
 
 .tag {
@@ -465,15 +467,24 @@ div.active .project-section-right {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  height: 100%;
 }
 
 .tool{
-  width: 10em;
+  width: 5em;
+  height: 10em;
+  display: grid;
+  grid-template-rows: 10em 1fr;
+  align-items: flex-end;
+  justify-items: center;
+  grid-gap: 1em;
 }
 
 .tool img {
-  width: 5em;
+  max-width: 100%;
+
   margin-top: 2em;
+  flex-grow: 1;
 }
 
 .tool-section {
@@ -805,7 +816,8 @@ div.active .project-section-right {
   .home-photo {
     width: 130%;
     height: auto;
-    top:2em;
+    
+    bottom:0;
     left:-65%;
     position: fixed;
 

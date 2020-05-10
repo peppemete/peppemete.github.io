@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Development of this portfolio">
+  <title>Porfolio Development</title>
+  <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!--Background for mobile-->
+  <div class="mobile-bg"></div>
+  
+  <!--start of content-->
+  <div class="content">
+  
+  <!--Aside-->
+  <div id="aside" class="aside-left"></div>
+
+  <div id="fullpage">
+    
+    <div class="section">
+      <header class="project-section">
+        <section class="project-section-left">
+            <img class="main-photo" src="/img/portfolio/portfolio.jpg"alt="">
+        </section>
+        <section class="project-section-right">
+            <h2>Portfolio Development</h2>
+            <ul class="tag">
+              <li><a href="#">UX/UI</a></li>
+              <li><a href="#">Desktop</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">XD</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JS</a></li>
+            </ul>
+            <p>I decided to integrate the development of the portfolio of my Projects shown, as I think it is a complete project, starting from the initial phase of the research and comes to an end with the development of the code.</p>
+            <h3 class="text_center"><a href="#">Click here to see the full code on gitHub</a></h3>
+        </section>
+    </header> 
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <h2>Research</h2>
+          <p>At this stage I looked for inspiration online, among other works, also taking into account my ideas and my development skills.</p>
+        </section>
+        <section class="project-section-right">
+          <img src="/img/portfolio/research.jpg" alt="">
+        </section>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <img src="/img/portfolio/mockup.jpg" alt="">
+        </section>
+        <section class="project-section-right">
+          <h2>Path design and wireframe development</h2>
+          <p>with clear ideas in mind I first decided which type of path to use, and then I started the first sketches of the site drawn by hand.</p>
+        </section>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <h2>Mockup & Prototype</h2>
+          <p>With all the wireframes ready, using Adobe XD, I designed all the pages, creating a prototype, also thinking about the animations.</p>
+        </section>
+        <section class="project-section-right">
+          <img src="/img/portfolio/prototype.jpg" alt="">
+        </section>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <img src="/img/portfolio/home.jpg" alt="">
+        </section>
+        <section class="project-section-right">
+          <h2>Code development</h2>
+          <h3>Home</h3>
+          <p>Inside the home, I inserted a visible menu and a photo of me, which with an animation moves to the left when you access the contact or about pages. 
+            To do this animation I had to do:
+            <ul>
+              <li>Insert Home-Contact-About in the same Index file, and insert an anchor for all of each.</li>
+              <li>Develop a show() function, which activates on body onload event, this function read the anchor on the URL and based on that, call the function openContact() or openAbout(); </li> 
+              <li>Develop openContact() and openAbout() functions that remove the home and insert the right page. </li> 
+              <li>Develop openContactHome() and openAboutHome() functions which do the same things od openContact() and openAbout() but they add the photo animation.  </li> 
+              <li>Develop turnHome() function which read on the URL the anchor, remove the right section and add the home page and photo animation.  </li> 
+            </ul>
+          </p>
+        </section>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <h3>Contact</h3>
+          <p>On the contact page, I wanted to show 2 links to reach me on social networks and a form to send me an email.
+            At first I developed this module by writing a PHP file, but when I found out that tools like GitHub.io and Netlify do not support dynamic code, I switched to using the module tool present on Netlify.</p>
+        </section>
+        <section class="project-section-right">
+          <img src="/img/portfolio/contact.jpg" alt="">
+        </section>
+      </section>
+    </div>
+   
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <img src="/img/portfolio/about.jpg" alt="">
+        </section>
+        <section class="project-section-right">
+          <h3>About</h3>
+          <p>Inside the about page I inserted a little description of me, and alo I inserted a link to contact page, and another to see my cv in another page( using the property target=“_blank”  </p>
+        </section>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <h3>Projects list</h3>
+          <p>Within this page I have included a list of my best projects, of each of these, I wanted to show the name of the project, the list of tags, a small description and a main image that changes with the hover effect.</p>
+        </section>
+        <section class="project-section-right">
+          <img src="/img/portfolio/project_list.jpg" alt="">
+        </section>
+      </section>
+    </div>
+   
+    <div class="section">
+      <section class="project-section">
+        <section class="project-section-left">
+          <img src="/img/portfolio/single_project.jpg" alt="">
+        </section>
+        <section class="project-section-right">
+          <h3>Single project page</h3>
+          <p>For each project I maked a single project page, where I described the all phases of this, I wanted to show this phases, one for page using a scroll effect.
+            To do the scroll effect and the other animations I used and edited the fullpage library.</p>
+        </section>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="project-section">
+          <section class="project-section-left tool-section">
+              <h3 class="text_center">Tool used</h3>
+              <section class="tool-section-list text_center">
+                  <div class="tool">
+                      <img src="/img/thefork/xd_icon.svg" alt="xd logo">
+                      <h5>Adobe XD</h5>
+                      <p>to design, make animation and prototyping</p>
+                  </div>
+                  <div class="tool">
+                    <img src="/img/portfolio/vsc_icon.png" alt="vsc logo">
+                    <h5>Visual Studio Code</h5>
+                    <p>To code</p>
+                  </div>
+               
+              </section>
+          </section>
+          <section class="project-section-right tool-section">
+            <h3 class="text_center">Language used</h3>
+            <section class="tool-section-list text_center">
+                <div class="tool">
+                    <img src="/img/portfolio/html_5_logo.png" alt="html 5 logo">
+                    <h5>HTML 5</h5>
+                </div>
+                <div class="tool">
+                  <img src="/img/portfolio/css3_logo.png" alt="css 3 logo">
+                  <h5>CSS 3</h5>
+                </div>
+                <div class="tool">
+                  <img src="/img/portfolio/js_logo.jpg" alt="JavaScrpt logo">
+                  <h5>Java Script Vanilla</h5>
+                </div>
+             
+            </section>
+             
+          </section>
+      </section>
+  </div>
+    
+
+  </div>
+
+
+  </div>
+
+  <script type="text/javascript" src="/js/fullpage.js"></script>
+    <script type="text/javascript" src="/js/openmenu.js" ></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            responsiveWidth:700,
+            navigation: true,
+	        navigationPosition: 'right',
+            
+        });
+        
+        //methods
+        fullpage_api.setAllowScrolling(true);
+        </script>
+
+  
+</body>
+</html>
