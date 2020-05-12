@@ -782,7 +782,7 @@ div.active .project-section-right {
 .mobile-bg {
   display: none;
 }
-@media(max-width: 700px){
+@media(max-width: 768px){
 
   html{
     font-size: 1.5em;
@@ -925,13 +925,14 @@ div.active .project-section-right {
   .logo-home h1{
 
     color:#c8c8c8;
+    line-height: 1;
   }
 
 
   .logo {
     transform: none;
     font-size: 0.7em;
-    margin-top: -2em;
+    
   }
 
   .logo h5 {
@@ -986,7 +987,7 @@ div.active .project-section-right {
   }
 
   .img-iphone img {
-    width: 100%;
+    width: 80vw;
   }
 
   .photo-left {
@@ -1064,6 +1065,10 @@ div.active .project-section-right {
 
   .menu-window-open {
    width: 100%;
+  }
+
+  .tool {
+    height: auto;
   }
 
   
