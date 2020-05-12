@@ -998,6 +998,9 @@ div.active .project-section-right {
 .img {
   order:1;
 }
+.img img{
+  width: 88vw;
+}
 
 
   .contact-left {
@@ -1067,6 +1070,10 @@ div.active .project-section-right {
    width: 100%;
   }
 
+  .tool-section {
+    flex: auto;
+  }
+  
   .tool {
     height: auto;
   }
