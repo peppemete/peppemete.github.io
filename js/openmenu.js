@@ -16,7 +16,7 @@ aside.innerHTML = `
                     <div id="menuWindow" class="menu-window">
                         <ul>
                             <li><h2><a href="/index.html#home" onclick="javascript:location.href='/index.html#home';window.location.reload();">Home</a></h2></li>
-                            <li><h2><a href="/projects/projects.html">Project</a></h2></li>
+                            <li><h2><a href="/projects/projects.html">Projects</a></h2></li>
                             <li><h2><a href="/index.html#about" onclick="javascript:location.href='/index.html#about';window.location.reload();">About</a></h2></li>
                             <li><h2><a href="/index.html#contact" onclick="javascript:location.href='/index.html#contact';window.location.reload();">Contact</a></h2></li>
                             </ul>
