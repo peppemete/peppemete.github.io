@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIEMME - Drop Shipping Offline - WP Plugin</title>
+    <meta name="description" content="Dropshipping Offline plugin development was a project that I did for my university thesis">
+    <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="mobile-bg"></div>
+
+
+    <div class="content">
+        <div id="aside" class="aside-left"></div>
+
+        <div id="fullpage">
+
+            <div class="section" onshow="load()">
+                <header class="project-section">
+                    <section class="project-section-left">
+                        <img class="main-photo" src="/img/drop-shipping/DSO_1.png" alt="">
+                    </section>
+                    <section class="project-section-right">
+                        <h2>Drop Shipping Offline - WP Plugin</h2>
+                        <ul class="tag">
+                            <li>Wordpress</li>
+                            <li>WooCommerce</li>
+                            <li>Plugin</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <p>DropShipping Offline is a WordPress plugin, its task is to solve the problem of managing a hybrid e-commerce system, with dropshipping products and products in stock, going to generate a report of the products sold daily divided between dropshipping products and products in stock.</p>
+                        <h3 class="text_center"><a target=“_blank” href="https://github.com/peppemete/Drop_Shipping_Offline">Click here for the full code on gitHub.</a></h3>
+                    </section>
+                </header>
+            </div>
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left">
+                        <h2>The plugin development phases were:</h2>
+                        <ul>
+                            <li><strong>Requirements analysis</strong>: phase in which, through discussions with the customer, it was decided what the fundamental requirements were that the plugin had to support.</li>
+                            <li><strong>Data modeling</strong>: phase in which the data schema was analyzed, using the entity / relationship model and the relational schema.</li>
+                            <li><strong>Business logic</strong>: phase in which, through specific UML diagrams, the implementation of the application logic is defined.</li>
+                            <li><strong>Implementation</strong>: phase in which the implementation of the plugin takes place.</li>
+                        </ul>
+                    </section>
+                    <section class="project-section-right img">
+                        <img src="/img/drop-shipping/phases.jpg" alt="programming page">
+                    </section>
+                </section>
+            </div>
+
+            
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left">
+                        <h2>Requirements analysis</h2>
+                        <ol>
+                            <li>
+                                <h3>Sending the daily report via email</h3>
+                                <p>Functional requirement, MUST</p>
+                                <p>Actors: User, Server.</p>
+                                <p>Archives: order archive, product archive, information archive.</p>
+                                <p>Daily the Server starts an application, which accesses the archives: order archive, product archive, information archive, and through queries it obtains the products sold in the day, divides them between drop shipping and in stock products, accessing the information archive obtains the e-mail address set and send the email to the User with the daily report.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="project-section-right img">
+                        <ol start="2">
+                            <li>
+                                <h3>View previous reports.</h3>
+                                <p>functional requirement, SHOULD</p>
+                                <p>Actors: User.</p>
+                                <p>Archives: order archive, product archive.</p>
+                                <p>The user by starting an application, which accesses the order archive, product archive and through queries obtains the products
+                                    sold on the selected day, divides them between products in drop shipping and in stock, and displays the report on the screen.</p>
+                            </li>
+                        </ol>
+                    </section>
+                </section>
+            </div>
+            
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left">
+                        <ol start="3">
+                            <li>
+                                <h3>Change email address</h3>
+                                <p>Functional requirement, MUST</p>
+                                <p>Actors: User.</p>
+                                <p>Archives: information archive.</p>
+                                <p>The User can change the present email address as he wishes in the information archive archive.</p>
+                            </li>
+                            <li>
+                                <h3>Activation / Deactivation of the e-mail service</h3>
+                                <p>Functional requirement, SHOULD</p>
+                                <p>Actors: User.</p>
+                                <p>Archives: information archive.</p>
+                                <p>The User can activate or deactivate the mail service at his convenience.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="project-section-right img">
+                        <ol start="5">
+                            <li>
+                                <h3>Use of a graphical interface within the WordPress backend</h3>
+                                <p>not-functional requirement, MUST</p>
+                                <p>Actors: User.</p>
+                                <p>Archives: none.</p>
+                                <p>The User accesses the plugin settings via a page inserted in the WordPress back-end menu.</p>
+                            </li>
+                        </ol>
+                    </section>
+                </section>
+            </div>
+
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left img">
+                        <img src="/img/drop-shipping/ER.png" alt="Entity - Relationship Model">
+                    </section>
+                    <section class="project-section-right data-modeling">
+                        <h2>Data Modeling</h2>
+                        <section>
+                            <h3>E-R model</h3>
+                            <p>The Entity Relationship model is a conceptual data model, and provides a series of structures designed to describe reality in an easy-to-understand way, to do this it uses graphic symbols, so that understanding is immediate.</p>
+                        </section>
+                    </section>
+                </section>
+            </div>
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left img">
+                        <section>
+                            <h3>relational schema</h3>
+                            <p>The relational schema is a logical model of representation of data on an database.</p>
+                        </section>
+                    </section>
+                    <section class="project-section-right data-modeling">
+                        <img src="/img/drop-shipping/RS.png" alt="Relational Schema">
+                    </section>
+                </section>
+            </div>
+
+            
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left">
+                        <h2>Business Logic</h2>
+                        <p>The term business logic refers to all the application logic that makes an application operational.
+                            Diagrams have been used to describe it, which broadly reproduce the semantics of the UML language, used in Class Diagrams.
+                            In the specification:</p>
+                            <ul>
+                                <li>The upper part indicates the Application layer, ie an interface with the methods that allow you to perform the operations described in the functional requirements. In addition, the actor who can use the methods is indicated for each interface.</li>
+                                <li>The lower part indicates the Data Layer, or an abstraction of how the data, represented in the Entity / Relationship model, are used by the various methods.</p></li>
+                            </ul>
+                    </section>
+                    <section class="project-section-right">
+                        <img src="/img/drop-shipping/business1.png" alt="">
+                        <p>Through the “send the daily report” interface, the server can create the daily report, by accessing the entities wp_posts, wp_postmet, wp_woocommerce_order_items, wp_woocommerce_itemmeta, and the same can send the email by accessing the information contained in the entity wp_options.</p>
+                    </section>
+                </section>
+            </div>
+            
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left">
+                        <img src="/img/drop-shipping/business2.png" alt="">
+                        <p>Through the “View past reports” interface, the user can create the report of the previous days, by accessing the entities wp_posts, wp_postmeta, wp_woocommerce_order_items and wp_woocommerce_itemmeta.</p>
+                    </section>
+                    <section class="project-section-right img">
+                        <img src="/img/drop-shipping/business3.png" alt="">
+                        <p>Through the “Change settings” interface, the user can change the settings such as e-mail address, and activate / deactivate Mail service, by accessing the information contained in the entity wp_options.</p>
+                    </section>
+                </section>
+            </div>
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left img">
+                        <h2>Functional requirements implementation</h2>
+                        <ol>
+                            <li>The creaReport() function receives a date as input and generates the report of the products sold on that particular day.To do this through queries you enter the Database, and, in the following are obtained: order ID, ID that associates the product with the order, product ID, product name, quantity sold, address, and type of sale. By learning this information, a table is generated.</li>
+                            <li>the inviaMail() function, sends the table generated by the creaReport() function to the address of the Database in the ‘DSO_mail’ option only if the ‘DSO_abilita’ option is set to ‘si’.</li>
+                            <li>the modificaMail() and attivaServizio() functions have been incorporated into the ‘edit_property’ file, which receives the new values to be entered in the database via the POST method of HTTP and to modify the DPO_mail and DPO_abilita values</li>
+                        </ol>
+
+    
+                    </section>
+                    <section class="project-section-right">
+                        <img src="/img/drop-shipping/creareport.png" alt="">
+                        
+                    </section>
+                </section>
+            </div>
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left">
+                        <img src="/img/drop-shipping/interfaccia.png" alt="">
+                    </section>
+                    <section class="project-section-right img">
+                        <h2>Graphic interface implementation</h2>
+                        <p>In order to meet the non-functional requirement “Use of a graphical interface within the WordPress backend”, a settings page has been implemented within the WordPress backend. To do this, the “Hook” admin_menu was used, which gives the possibility of inserting a new section into the WP menu. inside it has been inserted an HTML page with 2 forms, to modify the settings of the mail service, and to generate the report.</p>
+                    </section>
+                </section>
+            </div>
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left img">
+                        <h2>Installation</h2>
+                        <p>The installation is divided into 2 main parts, the first is the classic installation of wordpress plugins, while the second is used to install the daily report sending service via email. In order for the server to execute the PHP file that sends the email, there is a need to configure the Scheduled task, i.e. the Aruba function that allows you to program the launch of applications present within the web space, specifying start times and dates and completion and planning time intervals for the repetition of the Task.</p>
+                     </section>
+                    <section class="project-section-right">
+                        <img src="/img/drop-shipping/installation.png" alt="">
+                    </section>
+                </section>
+            </div>
+
+            <div class="section">
+                <section class="project-section">
+                    <section class="project-section-left tool-section">
+                        <h3 class="text_center">Tool used</h3>
+                        <section class="tool-section-list text_center">
+                            <div class="tool">
+                                <img src="/img/drop-shipping/mamp_logo.png" alt="vsc logo">
+                                <h5>MAMP</h5>
+                                <p>To simulate the server</p>
+                              </div>
+
+                            <div class="tool">
+                                <img src="/img/portfolio/vsc_icon.png" alt="vsc logo">
+                                <h5>Visual Studio Code</h5>
+                                <p>To code</p>
+                              </div>
+
+
+                         
+                        </section>
+                    </section>
+                    <section class="project-section-right tool-section">
+                        <h3 class="text_center">Language used</h3>
+                        <section class="tool-section-list text_center">
+                            <div class="tool">
+                              <img src="/img/drop-shipping/php_logo.png" alt="PHP logo">
+                              <h5>PHP</h5>
+                            </div>
+                            <div class="tool">
+                                <img src="/img/portfolio/html_5_logo.png" alt="html 5 logo">
+                                <h5>HTML 5</h5>
+                            </div>
+                            <div class="tool">
+                              <img src="/img/portfolio/css3_logo.png" alt="css 3 logo">
+                              <h5>CSS 3</h5>
+                            </div>
+                         
+                        </section>
+                         
+                      </section>
+                </section>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script type="text/javascript" src="/js/fullpage.js"></script>
+    <script type="text/javascript" src="/js/openmenu.js" ></script>
+   
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            licenseKey: 'zMccI0J!a3',
+            autoScrolling:true,
+            scrollHorizontally: true,
+            responsiveWidth:768,
+            navigation: true,
+	        navigationPosition: 'right',
+            
+        });
+        
+        //methods
+        
+        fullpage_api.setAllowScrolling(true);
+    </script>
+
+</body>
+
+</html>

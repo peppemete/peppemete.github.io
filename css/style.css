@@ -383,7 +383,10 @@ li {
   section.project-section{
     margin:2em 0;
   }
+}
 
+.data-modeling section{
+  margin: auto;
 
 }
 
@@ -504,6 +507,7 @@ div.active .project-section-right {
 
 .tool img {
   max-width: 100%;
+  align-self: center;
 
   margin-top: 2em;
   flex-grow: 1;
