@@ -29,9 +29,11 @@ var body=document.body;
 var menuWindow=document.getElementById("menuWindow");
 var menuBg=document.getElementById("menuBg");
 var Nclick=0;
+
 menuBtn.addEventListener("click",openMenu);
 function openMenu() {
     console.log("you clicked");
+   
     menuWindow.classList.toggle("menu-window-open");
     menuBg.classList.toggle("menubg-visible");
     bars.forEach(bar => bar.classList.toggle("change"));
