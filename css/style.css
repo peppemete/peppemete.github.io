@@ -502,10 +502,9 @@ div.active .project-section-right {
 
 .tool{
   width: 5em;
-  height: 10em;
   display: grid;
-  grid-template-rows: 10em 1fr;
-  align-items: flex-end;
+  grid-template-rows: 10em auto auto;
+  align-items: start;
   justify-items: center;
   grid-gap: 1em;
 }
@@ -1121,9 +1120,18 @@ div.active .project-section-right {
   
   .tool {
     height: auto;
+
   }
 
-  ul, ol {
+  .tool h5{
+    min-height: 2em;
+  }
+
+  .tool p{
+    margin:0;
+  }
+
+  ul, ol, li {
     text-align: left;
   }
 
