@@ -384,6 +384,7 @@ ul {
   section.project-section{
     margin:2em 0;
   }
+
 }
 
 .data-modeling section{
@@ -432,6 +433,9 @@ div.active .project-section-left {
   .project-section-left>img {
     width: calc(100vw - 2em);
     margin: 1em 0 ;
+  }
+  header .project-section-left>img {
+    margin-top:5em;
   }
 }
 
@@ -907,7 +911,7 @@ div.active .project-section-right {
   .logo-home.home h1 {
     position: fixed;
     right: 0;
-    top:2em;
+    top:3em;
     right: 1rem;
     
   }
@@ -915,6 +919,7 @@ div.active .project-section-right {
   .logo-home.home h5 {
     position:fixed;
     right: 1rem;
+    top:7em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1121,6 +1126,11 @@ div.active .project-section-right {
   ul, ol {
     text-align: left;
   }
+
+
+  header .project-section  img{
+    margin-top: 5em;
+  } 
   
 }
 
