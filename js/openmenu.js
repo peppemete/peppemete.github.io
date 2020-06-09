@@ -28,6 +28,7 @@ var bars=menuBtn.querySelectorAll("div");
 var body=document.body; 
 var menuWindow=document.getElementById("menuWindow");
 var menuBg=document.getElementById("menuBg");
+
 var Nclick=0;
 
 menuBtn.addEventListener("click",openMenu);
@@ -40,8 +41,14 @@ function openMenu() {
     aside.classList.toggle("open");
     Nclick++;
     if(Nclick%2==0){
+        document.getElementById("goHome").setAttribute("href","/index.html#home");
+        document.getElementById("goHome").setAttribute("onclick","javascript:location.href='/index.html#home';window.location.reload();");
+        document.body.style.overflow="scroll";
         fullpage_api.setAllowScrolling(true);
     }else{
+        document.getElementById("goHome").removeAttribute("href");
+        document.getElementById("goHome").removeAttribute("onclick");
+        document.body.style.overflow="hidden";
         fullpage_api.setAllowScrolling(false);
     }
 }
